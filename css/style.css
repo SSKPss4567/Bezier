@@ -6,7 +6,20 @@ header{
     
 }
 .ggg{
-    background-image:url("../img/debora-pilati-dOG0z4-gqp0-unsplash.jpg");
-    background-position: 100%;
-    background-size: 100%;
+    background-image:url("../img/Hero_Desktop-47db29dfa0ec27da097f38bbbe35c8ae.jpg");
+    
+    background-size: 1920px 1080px;
+    height: 450px;
+}
+
+.tt{
+    margin-top: 50px;
+}
+.bb{
+    margin-top: 25px;    
+}
+.ph{
+    height: 300px;   
+    width: 300px;
+    size: 300%;
 }
