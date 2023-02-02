@@ -12,7 +12,7 @@ app.config['UPLOAD_FOLDER'] = 'static/files'
 
 class UploadFileForm(FlaskForm):
     file = FileField("File", validators = [InputRequired()])
-    submit = SubmitField("Upload File")
+    submit = SubmitField("Отправить файл")
 
 @app.route('/', methods=["GET","POST"])
 @app.route('/home', methods=["GET","POST"])
