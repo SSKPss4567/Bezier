@@ -30,6 +30,14 @@ def index():
         return graph.dr(res)
     return render_template("index.html", form = form)
 
+@app.route('/vhod' )
+def vhod():
+    return render_template("vhod.html")    
+@app.route('/reg' )
+def reg():
+    return render_template("reg.html") 
+
+
 
 if __name__ == "__main__":
     app.run()
