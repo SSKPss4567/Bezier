@@ -27,7 +27,11 @@ def index():
             files = [os.path.join(path, file) for file in files]
             files = [file for file in files if os.path.isfile(file)]
             res = max(files, key = os.path.getctime)
-        return graph.dr(res)
+        try:
+            graph.dr(res) 
+        
+        except Exception as e:
+            print(e)
     return render_template("index.html", form = form)
 
 @app.route('/vhod' )
@@ -40,4 +44,4 @@ def reg():
 
 
 if __name__ == "__main__":
-    app.run()
+    app.run(debug=True)
