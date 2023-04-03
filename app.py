@@ -36,7 +36,10 @@ def index():
 
 @app.route('/vhod' )
 def vhod():
-    return render_template("vhod.html")    
+    return render_template("vhod.html") 
+@app.route('/prof' )
+def prof():
+    return render_template("prof.html")    
 @app.route('/reg' )
 def reg():
     return render_template("reg.html") 
